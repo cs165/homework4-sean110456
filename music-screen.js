@@ -31,7 +31,7 @@ class MusicScreen {
     this.containerElement.classList.add('inactive');
   }
   loadScreen(songUrl,theme){
-    const urlHead = 'http://api.giphy.com/v1/gifs/search?';
+    const urlHead = 'https://api.giphy.com/v1/gifs/search?';
     const q = 'q=' + encodeURIComponent(theme);
     const api_key = '&api_key=IZdz8B09DglQg3dTJUMTgqLGCesMPOVZ';
     const limit = '&limit=25';
