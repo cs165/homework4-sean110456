@@ -23,7 +23,7 @@ class GifDisplay {
       if(i===this.imgUrl.length){
         return;
       }
-      if(this.prelaodImg.length >= 2){
+      if(this.prelaodImg.length === 2){
         document.dispatchEvent(new CustomEvent('load-complete',{}));
       }
       const tImg = document.createElement('img');
