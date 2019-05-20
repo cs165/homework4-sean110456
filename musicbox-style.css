@@ -1,3 +1,35 @@
 /*
 TODO(you): Write any additional styles you need here.
 */
+#music{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  #music div{
+    flex-grow:1;
+  }
+  .gif{
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer img{
+    width: 60px;
+    height: 60px;
+  }
+  #loading{
+    display: flex;
+    height: 100vh;
+    color: #e2e2e2;
+    font-size: 2em;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+  }

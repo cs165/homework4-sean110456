@@ -5,6 +5,17 @@
 class App {
   constructor() {
     // TODO(you): Implement the constructor and add fields as necessary.
+    const menuElement = document.querySelector('#menu');
+    this.menu = new MenuScreen(menuElement);
+    const musicElement = document.querySelector('#music');
+    this.musicScreen = new MusicScreen(musicElement);
+    this.onSubmit = this.onSubmit.bind(this);
+    document.addEventListener('submitted',this.onSubmit);
   }
   // TODO(you): Add methods as necessary.
+  onSubmit(event){    
+    event.preventDefault();
+    this.menu.hide();
+    this.musicScreen.loadScreen(event.detail.song,event.detail.theme);
+  }
 }
